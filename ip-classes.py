@@ -62,7 +62,7 @@ def ip_class(ip):
     try:
         if int(oct1, 0) >= 256 or int(oct2, 0) >= 256 or int(oct3, 0) >= 256 or int(oct4, 0) >= 256:
             quit("Invalid IP, try again")
-    except ValueError: #int(, 0) need 0 radix treat as octal/hex and throws error if invalid, compatible with ping/curl 
+    except ValueError: #int(, 0) need 0 radix to treat as octal/hex and throws error if invalid, compatible with ping/curl 
         quit("Invalid IP. Note that prefix 0 or 0x will treat as octal or hex respectively\
 , which should contains valid character 0-7 or 0-f respectively.")
 
