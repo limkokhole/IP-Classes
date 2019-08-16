@@ -125,7 +125,7 @@ if __name__ == "__main__":
     arg_parser.add_argument('ip', nargs='?', help='Numeric ip')
     args, remaining = arg_parser.parse_known_args()
     if args.ip:
-        ip = args.ip
+        ip = args.ip.strip()
     else:
         if PY3:
             ip = input('ip: ').strip()
