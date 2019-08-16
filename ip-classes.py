@@ -124,7 +124,7 @@ if __name__ == "__main__":
                             help='Debug by printing log.')
     arg_parser.add_argument('ip', nargs='?', help='Numeric ip')
     args, remaining = arg_parser.parse_known_args()
-    if args.ip:
+    if args.ip.strip():
         ip = args.ip.strip()
     else:
         if PY3:
