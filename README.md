@@ -59,9 +59,13 @@ Note that IPv4 addresses classes really don't exist anymore, and have been depre
     127.000.000.001 is a Localhost (Loopback) IP
 
     $ ip-classes 192.168.001.008 #but 8 is not a valid octal number, compatible with ping/curl, [see here.](https://stackoverflow.com/questions/33027095/why-ipaddress-parse192-168-001-001-works-while-ipaddress-parse192-168-001/33027136#33027136)
-    Invalid IP. Note that prefix 0 will treat as octal which should contains valid digits 0-7.
+    Invalid IP. Note that prefix 0 or 0x will treat as octal or hex respectively, which should contains valid character 0-7 or 0-f respectively.
     Abort.
 
     $ ip-classes 0x7f.0.0.1 #support valid hex, compatible with ping/curl
     0x7f.0.0.1 is a Localhost (Loopback) IP
+
+    $ ip-classes 0x7g.0.0.1
+    Invalid IP. Note that prefix 0 or 0x will treat as octal or hex respectively, which should contains valid character 0-7 or 0-f respectively.
+    Abort.
 
