@@ -17,7 +17,7 @@ Note that IPv4 addresses classes really don't exist anymore, and have been depre
     -h, --help  show this help message and exit
     -d          Debug by printing log.
 
-### Example of usage:
+### Examples of usage:
 
     $ type -a ip-classes #set as alias in ~/.bash_aliases
     ip-classes is aliased to `python /home/foo/bar/ip-classes.py'
@@ -36,6 +36,9 @@ Note that IPv4 addresses classes really don't exist anymore, and have been depre
 
     $ ip-classes 0.0.0.1
     0.0.0.1 is not a valid IP
+
+    $ ip-classes 169.254.0.0
+    169.254.0.0 is an APIPA IP
 
     $ echo -e "127.0.0.1\n8.8.8.8" | while read -r i; do ip-classes $i; done
     127.0.0.1 is a Localhost (Loopback) IP
