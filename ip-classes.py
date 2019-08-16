@@ -12,7 +12,7 @@ else:
 
 import readline #to make input() edit-able by LEFT key
 import argparse
-arg_parser = argparse.ArgumentParser(description='Baiwanzy Downloader')
+arg_parser = argparse.ArgumentParser(description='ip classes')
 args = ""
 
 def quit(msgs, exit=True):
