@@ -8,7 +8,7 @@ Note that IPv4 addresses classes really don't exist anymore, and have been depre
     $ python ip-classes.py --help
     usage: ip-classes.py [-h] [-d] [ip]
 
-    Baiwanzy Downloader
+    ip classes
 
     positional arguments:
     ip          Numeric ip
