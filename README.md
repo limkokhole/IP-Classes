@@ -1,7 +1,7 @@
 # IP-Classes
-Enter in an IP address and it tells you what class it belongs to. Includes localhost, private (RFC 1918), and Apipa addresses.
+Enter an IP address and it tells you what class it belongs to. Includes localhost, private (RFC 1918), and Apipa addresses.
 
-Noe that IPv4 addresses classes really don't exist anymore, and have been deprecated in 1993. [See here](https://networkengineering.stackexchange.com/questions/19840/does-cidr-really-do-away-with-ip-address-classes)
+Note that IPv4 addresses classes really don't exist anymore, and have been deprecated in 1993. [See here](https://networkengineering.stackexchange.com/questions/19840/does-cidr-really-do-away-with-ip-address-classes)
 
 ### Usage: 
 
