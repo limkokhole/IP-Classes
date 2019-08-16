@@ -61,3 +61,7 @@ Note that IPv4 addresses classes really don't exist anymore, and have been depre
     $ ip-classes 192.168.001.008 #but 8 is not a valid octal number, compatible with ping/curl, [see here.](https://stackoverflow.com/questions/33027095/why-ipaddress-parse192-168-001-001-works-while-ipaddress-parse192-168-001/33027136#33027136)
     Invalid IP. Note that prefix 0 will treat as octal which should contains valid digits 0-7.
     Abort.
+
+    $ ip-classes 0x7f.0.0.1 #support valid hex, compatible with ping/curl
+    0x7f.0.0.1 is a Localhost (Loopback) IP
+
