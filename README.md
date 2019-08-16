@@ -55,7 +55,7 @@ Note that IPv4 addresses classes really don't exist anymore, and have been depre
     Invalid IP, try again
     Abort.
 
-    $ ip-classes 127.000.000.001 #this consider valid since ping/curl also can works
+    $ ip-classes 127.000.000.001 #this consider valid since 1 is valid octal, compatible with ping/curl.
     127.000.000.001 is a Localhost (Loopback) IP
 
 <code>#but 8 is not a valid octal number, compatible with ping/curl, e.g.(and [See here.](https://stackoverflow.com/a/33027136/1074998)):</code>
