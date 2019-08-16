@@ -79,7 +79,7 @@ def ip_class(ip):
         print( "%s is a Localhost (Loopback) IP" % ip )
     # APIPA
     elif int(oct1) == 169 and  int(oct2) == 254:
-        print( "%s is an APIPA IP" %ip )
+        print( "%s is an APIPA (Automatic Private IP Addressing) IP" %ip )
     # B Class, beginning of B class 128.x.x.x thru 171.x.x.x
     elif int(oct1) in range(128,172):
         print( "%s is a B class IP" % ip )

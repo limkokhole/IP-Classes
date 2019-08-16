@@ -38,7 +38,7 @@ Note that IPv4 addresses classes really don't exist anymore, and have been depre
     0.0.0.1 is not a valid IP
 
     $ ip-classes 169.254.0.0
-    169.254.0.0 is an APIPA IP
+    169.254.0.0 is an APIPA (Automatic Private IP Addressing) IP
 
     $ echo -e "127.0.0.1\n8.8.8.8" | while read -r i; do ip-classes $i; done
     127.0.0.1 is a Localhost (Loopback) IP
