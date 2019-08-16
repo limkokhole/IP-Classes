@@ -58,9 +58,9 @@ Note that IPv4 addresses classes really don't exist anymore, and have been depre
     $ ip-classes 127.000.000.001 #this consider valid since ping/curl also can works
     127.000.000.001 is a Localhost (Loopback) IP
 
-    $ ip-classes 192.168.001.008
 <code>#but 8 is not a valid octal number, compatible with ping/curl, [See here.](https://stackoverflow.com/a/33027136/1074998)</code>
 
+    $ ip-classes 192.168.001.008
     Invalid IP. Note that prefix 0 or 0x will treat as octal or hex respectively, which should contains valid character 0-7 or 0-f respectively.
     Abort.
 
