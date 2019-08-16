@@ -54,3 +54,6 @@ Note that IPv4 addresses classes really don't exist anymore, and have been depre
     $ ip-classes 1000
     Invalid IP, try again
     Abort.
+
+    $ ip-classes 127.000.000.001 #this consider valid since ping/curl also can works
+    127.000.000.001 is a Localhost (Loopback) IP
